@@ -1,0 +1,116 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0; /* Ajout d'un fond pour un meilleur contraste */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1, h2 {
+  margin: 20px 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="date"],
+select {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.table-monitoring, .table-alerts {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  text-align: center;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  background-color: rgba(255, 255, 255, 0.8); /* Légère transparence pour voir le fond */
+}
+
+.table-monitoring th, .table-monitoring td,
+.table-alerts th, .table-alerts td {
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.table-monitoring th {
+  background-color: #006400; /* Dark Green */
+  color: white;
+}
+
+.table-monitoring tr:nth-child(even) {
+  background-color: rgba(0, 100, 0, 0.2); /* Dark Green with transparency */
+}
+
+.table-monitoring tr:hover {
+  background-color: rgba(0, 100, 0, 0.3); /* Slightly darker on hover */
+}
+
+.table-alerts th {
+  background-color: #8B0000; /* Dark Red */
+  color: white;
+}
+
+.table-alerts tr:nth-child(even) {
+  background-color: rgba(139, 0, 0, 0.2); /* Dark Red with transparency */
+}
+
+.table-alerts tr:hover {
+  background-color: rgba(139, 0, 0, 0.3); /* Slightly darker on hover */
+}
+
+.monitoring-background, .alerts-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-content {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Légère transparence pour rendre le texte lisible */
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
