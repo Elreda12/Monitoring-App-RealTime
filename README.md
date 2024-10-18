@@ -1,30 +1,49 @@
 ﻿# Monitoring-App-RealTime
  
-L'objectif est de mettre en place un système de gestion des opérations asynchrones et 
-réactives en utilisant Spring Boot avec Webflux, garantissant ainsi une performance optimale 
-même lors de larges charges de données.
+The goal is to implement a system for managing asynchronous and
+reactive operations using Spring Boot with Webflux, thus ensuring optimal performance
+even during large data loads.
 
-Le projet vise à créer une interface utilisateur conviviale en React, permettant aux 
-administrateurs et aux utilisateurs de visualiser de manière claire les flux de données, de 
-consulter des statistiques en temps réel et d'accéder aisément à la gestion des anomalies. 
-L'objectif de cette interface est d'optimiser l'expérience des utilisateurs, facilitant ainsi le suivi 
-et l'intervention en cas de nécessité.
+The project aims to create a user-friendly user interface in React, allowing
+administrators and users to clearly visualize data flows,
+consult real-time statistics and easily access anomaly management.
+The goal of this interface is to optimize the user experience, thus facilitating monitoring
+and intervention when necessary.
 
 ![Capture d'écran 2024-10-17 215806](https://github.com/user-attachments/assets/092377ac-2fa3-42bb-94e6-20f980653e1a)
 
  
-L'architecture illustrée montre un système de collecte et de traitement des flux de données en 
-temps réel. La première étape consiste à collecter les flux de données via un système de collecte 
-centralisé (SI Collecte). Ces flux proviennent de différentes sources, notamment des 
-équipements MSC de Nokia et Ericsson, des équipements Huawei pour les PGW et SGW, ainsi 
-que des systèmes OCS avec des flux de données nommés Rec20 et Data20. Les flux collectés 
-sont ensuite acheminés vers cinq serveurs Edge (Edge1 à Edge5), chacun recevant des flux 
-spécifiques selon leur type et leur source. Sur chaque serveur Edge, Apache NiFi est utilisé pour 
-décoder et dispatcher les flux de données.  
+The illustrated architecture shows a system for collecting and processing data streams in
+real time. The first step is to collect the data streams via a centralized collection
+system (SI Collection). These streams come from different sources, including
+MSC equipment from Nokia and Ericsson, Huawei equipment for PGWs and SGWs,
+as well as OCS systems with data streams named Rec20 and Data20. The collected
+streams are then routed to five Edge servers (Edge1 to Edge5), each receiving
+specific streams according to their type and source. On each Edge server, Apache NiFi is used to
+decode and dispatch the data streams.
 
-L'industrialisation de la supervision d'une chaîne data et orchestration des alertes 
-NiFi traite les données en temps réel, les décode pour en extraire les informations pertinentes, 
-puis les distribue vers les clusters de stockage MapR6 et MapR7. Ces clusters servent à stocker 
-et gérer les données traitées, permettant une récupération et une analyse efficaces. Ainsi, cette 
-architecture permet une gestion robuste et en temps réel des flux de données depuis leur collecte 
-jusqu'à leur stockage. 
+Industrialization of data chain monitoring and alert orchestration
+NiFi processes the data in real time, decodes it to extract the relevant
+information, then distributes it to the MapR6 and MapR7 storage clusters. These clusters are used to store
+and manage the processed data, allowing efficient retrieval and analysis. Thus, this
+architecture allows robust and real-time management of data flows from their collection
+to their storage.
+
+![image](https://github.com/user-attachments/assets/67e3c3d7-70da-437a-9107-def990b3726a)
+
+Project Structure
+1. Data Processing Strategy with Apache Processors
+NiFi
+![image](https://github.com/user-attachments/assets/efde5a07-bef7-4f8d-8306-ef64d12f87d1)
+
+![image](https://github.com/user-attachments/assets/1e5a5100-4895-4411-88ce-a9345e8851d5)
+
+2. Presentation of the application interfaces
+
+![image](https://github.com/user-attachments/assets/78a7f768-ca10-4733-a223-c3aa8fbc1d84)
+![Capture d’écran 2024-06-05 145735](https://github.com/user-attachments/assets/a84a7cc9-0528-474e-b67e-cc9531b9fefa)
+
+![image](https://github.com/user-attachments/assets/6e6ea51e-6210-496f-ae94-a2bbafbdfb75)
+
+
+
