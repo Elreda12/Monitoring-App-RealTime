@@ -38,7 +38,13 @@ NiFi
 
 ![image](https://github.com/user-attachments/assets/1e5a5100-4895-4411-88ce-a9345e8851d5)
 
-2. Presentation of the application interfaces
+2. Introduction to Data Consumed by Kafka Topics
+
+   ![image](https://github.com/user-attachments/assets/8c43d577-311c-41bb-b4ff-523f0ee68f82)
+![image](https://github.com/user-attachments/assets/9c62e0e1-d69a-48c7-a794-cc2e46e12c8c)
+
+
+3. Presentation of the application interfaces
 
 ![image](https://github.com/user-attachments/assets/78a7f768-ca10-4733-a223-c3aa8fbc1d84)
 ![Capture d’écran 2024-06-05 145735](https://github.com/user-attachments/assets/a84a7cc9-0528-474e-b67e-cc9531b9fefa)
